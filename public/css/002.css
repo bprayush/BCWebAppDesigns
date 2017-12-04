@@ -1,0 +1,43 @@
+body{background-color:#f5f5f5;color:#000;margin:0px auto;padding:0px;font-family:Verdana;}
+#bigboi{margin:auto;width:100%;}
+#sidebar{position:fixed;float:left;width:250px;box-shadow:0px 0px 10px #6d6d6d;height:100%;background-color:#2c3e50;color:#fff;}
+#title{padding:10px;opacity:0.8;background-color:#34495e;height:50px;}
+#title:hover{cursor:pointer;opacity:1;transition:0.5s;}
+#linkz{padding:10px;margin-top:10px;}
+.links{text-decoration:none;opacity:0.6;float:left;margin-left:5px;padding:5px;font-size:14px;margin-top:2px;color:#ecf0f1;}
+.links:hover{opacity:1;border-left:10px solid #fff;transition:0.5s;}
+.activelinks{border-left:10px solid #ecf0f1;text-decoration:none;opacity:1;float:left;margin-left:5px;padding:5px;font-size:14px;margin-top:2px;color:#ecf0f1;}
+.small{width:18px;float:left;margin-right:10px;}
+.small2{width:18px;float:left;margin-right:5px;}
+#mainboy{margin-left:250px;}
+#welcome{height:100px;background-color:#2980b9;padding:20px;color:#fff;}
+#admin{float:right;}
+.himan{font-size:30px;font-family:Century Gothic;margin-left:20px;}
+#bottom{margin-top:40px;}
+#adder{margin:auto;width:250px;}
+.addme{background-color:#e74c3c;border:none;color:#fff;padding:10px;width:200px;font-size:15px;font-weight:bold;box-shadow:0px 0px 5px #e74c3c;}
+.addme:hover{background-color:#dd3625;cursor:pointer;transition:0.5s;box-shadow:0px 0px 15px #dd3625;}
+#logs{margin-top:40px;width:100%;}
+#left{background-color:#fff;float:left;margin:10px;width:40%;box-shadow:0px 0px 10px #b5b5b5;padding:40px;}
+#right{float:left;padding:40px;background-color:#fff;margin:10px;width:40%;box-shadow:0px 0px 10px #b5b5b5;}
+#alltheinfo{font-size:13px;}
+#smallCard{font-family:Century Gothic;background-color:#fcfcfc;border-radius:3px;box-shadow:0px 0px 5px #b5b5b5;padding:10px;}
+.logo{width:18px;margin-right:5px;border-radius:50px;height:18px;float:left;}
+#info{margin-left:25px;}
+.time{background-color:#27ae60;padding:5px;border-radius:3px;color:#fff;}
+.className{font-weight:bold;margin-left:5px;font-family:Century Gothic;font-size:15px;}
+.subName{margin-left:90px;font-style:italic;}
+#form{background-color:#fff;font-family:Century Gothic;margin:40px;width:600px;margin:0px auto;box-shadow:0px 0px 10px #b5b5b5;}
+#red{background-color:#e74c3c;color:#fff;padding:40px;}
+#MainForm{padding:40px;}
+.boxee{height:30px;width:250px;padding:3px;}
+/*Custom Checkbox starts here*/
+.container {position: relative;float:left;margin-left:250px;padding-left: 35px;margin-bottom: 12px;cursor: pointer;font-size: 14px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+.container input {position: absolute;opacity: 0;}
+.checkmark{position: absolute;top: 0;left: 0;height: 22px;width: 22px;background-color:#eee}
+.container:hover input ~ .checkmark {background-color: #ccc;}
+.container input:checked ~ .checkmark {background-color: #27ae60;}
+.checkmark:after{content: "";position: absolute;display: none;}
+.container input:checked ~ .checkmark:after {display: block;}
+.container .checkmark:after {left: 9px;top: 5px;width: 5px;height: 10px;border: solid white;border-width: 0 3px 3px 0;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);}
+/*End of Custom Checkbnox*/

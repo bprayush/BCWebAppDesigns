@@ -83,12 +83,4 @@ class AdminController extends Controller
         //
     }
 
-    public function sendManualNotification()
-    {
-        Notification::route('mail', env('MAIL_TO_ADDRESS'))
-                        ->notify(new \App\Notifications\ManualEmailNotification());
-
-        //return view('admin.notification.email');
-    }
-
 }

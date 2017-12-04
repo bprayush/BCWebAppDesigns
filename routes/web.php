@@ -19,4 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/email', 'AdminController@sendManualNotification')->name('send.manual.notification');
+Route::get('/email', 'SchedulesController@create')
+	->name('create.schedule');
+Route::post('/send', 'SchedulesController@sendManualNotification')
+	->name('send.manual.notification');

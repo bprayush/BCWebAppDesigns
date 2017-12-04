@@ -7,35 +7,35 @@
 
 
 @section('name')
-	Sakar Pudasaini
+	{{ $data->teacher }}
 @endsection
 
 
 @section('date')
-	4 December 2017, Monday
+	{{ $date->toFormattedDateString() }}
 @endsection
 
 
 @section('school')
-	Alok Vidhyashram
+	{{ $data->school }}
 @endsection
 
 
 @section('location')
-	Gyaneshwore, Kathmandu
+	Need to add one later.
 @endsection
 
 
 @section('time')
-	2:00 - 4:00
+	{{ $data->startTime }} - {{ $data->endTime }}
 @endsection
 
 
 @section('class')
-	6A, 7A
+	{{ $data->class }}
 @endsection
 
 
 @section('content')
-	Fun with Electronics
+	{{ $data->content }}
 @endsection

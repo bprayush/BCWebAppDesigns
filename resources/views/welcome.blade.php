@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="{{ route('send.manual.notification') }}">Send Email</a>
+                    <a href="{{ route('create.schedule') }}">Send Email</a>
                 </div>
             </div>
         </div>
