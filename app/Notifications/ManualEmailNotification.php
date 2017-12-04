@@ -48,6 +48,7 @@ class ManualEmailNotification extends Notification
         $date = Carbon::parse($data->date);
         //dd($data);
         return (new MailMessage)
+            ->subject('School Notification')
             ->view('admin.notification.email', compact('data', 'date'));
     }
 
