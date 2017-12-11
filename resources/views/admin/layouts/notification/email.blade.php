@@ -33,7 +33,7 @@
 	</head>
 	
 	<body>
-		<div class="mainBox">
+		<div class="mainBox" style="padding: 40px;">
 			<div class="greetings">
 				<span class="hi">Hello @yield('name'),</span> <br><br>
 				<span class="date">Your schedule for <i>@yield('date')</i> is ready</span><br><br>
