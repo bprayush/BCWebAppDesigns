@@ -84,6 +84,8 @@
 
                 <div class="links">
                     <a href="{{ route('create.schedule') }}">Send Email</a>
+                    <a href="{{ route('calendar.create.event') }}">Create Calendar Event</a>
+                    <a href="{{ route('calendar.get.events') }}">Get Calendar Event</a>
                 </div>
             </div>
         </div>

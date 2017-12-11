@@ -23,3 +23,11 @@ Route::get('/email', 'SchedulesController@create')
 	->name('create.schedule');
 Route::post('/send', 'SchedulesController@sendManualNotification')
 	->name('send.manual.notification');
+Route::post('/calendar/set', 'CalendarsController@setEvents')
+	->name('calendar.set.events');
+Route::get('/calendar/create', 'CalendarsController@createEvent')
+	->name('calendar.create.event');
+Route::get('/calendar/get', 'CalendarsController@getEvents')
+	->name('calendar.get.events');
+Route::get('/calendar/delete', 'CalendarsController@deleteEvents')
+	->name('calendar.delete.events');

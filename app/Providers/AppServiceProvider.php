@@ -11,6 +11,13 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
+
+    protected $listener = [
+        'App\Events\EmailNotification'=>[
+            'App\Listeners\EmailNotification'
+        ],
+    ];
+
     public function boot()
     {
         //
