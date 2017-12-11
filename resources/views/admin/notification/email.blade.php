@@ -27,7 +27,7 @@
 
 
 @section('time')
-	{{ $data->startTime }} - {{ $data->endTime }}
+	{{ $data->starttime }} - {{ $data->endtime }}
 @endsection
 
 

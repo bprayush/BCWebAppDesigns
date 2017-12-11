@@ -15,13 +15,17 @@ class CreateSchedulesTable extends Migration
     {
         Schema::create('schedules', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('teacher_id')->unsigned();
             $table->integer('school_id')->unsigned();
+            $table->integer('teacher_id')->unsigned();
             $table->integer('class_id')->unsigned();
-            $table->datetime('class_date');
-            $table->integer('notification_time')->unsinged(); //IN HRS
-            $table->integer('content_id')->nullable();
-            $table->integer('cluster_id')->nullable();
+            $table->integer('content_id')->unsigned();
+            $table->date('start_date');
+            $table->date('end_date');
+            $table->string('day');
+            $table->time('start_time');
+            $table->time('end_time');
+            $table->softDeletes();
+
             $table->timestamps();
         });
     }

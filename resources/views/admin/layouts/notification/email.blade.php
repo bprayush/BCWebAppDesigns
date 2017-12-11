@@ -61,7 +61,7 @@
 						<br><br>
 						<hr>
 						<br>
-						<img src="{{ asset('icons/tick.png') }}" class="small">Kit Ready<br>
+						<img src="{{ asset('icons/tick.png') }}" class="small">Kit Ready<br><br>
 						<img src="{{ asset('icons/tick.png') }}" class="small">Materials Ready<br>
 					</div>
 				</div>

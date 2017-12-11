@@ -3,7 +3,6 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use App\Schedule;
 
 class ScheduledNotification extends Command
 {
@@ -12,14 +11,14 @@ class ScheduledNotification extends Command
      *
      * @var string
      */
-    protected $signature = 'bcnotification:run';
+    protected $signature = 'schedule:email';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Send email to teachers regarding tomorrows class';
 
     /**
      * Create a new command instance.
@@ -38,6 +37,6 @@ class ScheduledNotification extends Command
      */
     public function handle()
     {
-        //
+        
     }
 }
