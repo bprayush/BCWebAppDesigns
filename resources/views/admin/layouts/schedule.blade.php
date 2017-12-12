@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style type="text/css">
 			body{background-color:#f5f5f5; width:100%;font-family:Arial;margin:0px auto;padding:0px;color:#000;}
-			.mainBox{margin:auto;width:650px;margin-top:100px;background-color:#f5f5f5;}
+			.mainBox{margin:auto;width:650px;background-color:#f5f5f5;}
 			.greetings{}
 			.hi{font-size:20px;font-family:Century Gothic;font-weight:bold;}
 			.card{font-family:Century Gothic;background-color:#fff;padding:20px;box-shadow:0px 0px 10px #b5b5b5;margin-top:20px;opacity:0.8;border-radius:3px;width:600px;}
@@ -39,7 +39,7 @@
 				<span class="date">Your schedule for <i>@yield('date')</i> is ready</span><br><br>
 			</div>
 			
-			<div class="card">
+			<div class="card" style="box-shadow:0px 0px 10px #b5b5b5;">
 				<div class="header">
 					<img src="{{ asset('images/kasatlogo.jpg') }}" class="logo"> 
 					<span class="schoolName">@yield('school')</span><br><br>

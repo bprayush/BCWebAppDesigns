@@ -1,4 +1,4 @@
-@extends('admin.layouts.notification.email')
+@extends('admin.layouts.schedule')
 
 
 @section('title')
@@ -7,7 +7,7 @@
 
 
 @section('name')
-	{{ $data->teacher }}
+	Prof. Suresh Ghimire
 @endsection
 
 
@@ -17,7 +17,7 @@
 
 
 @section('school')
-	{{ $data->school }}
+	Dota School
 @endsection
 
 
@@ -27,15 +27,15 @@
 
 
 @section('time')
-	{{ $data->starttime }} - {{ $data->endtime }}
+	2:00am - 11:00am 
 @endsection
 
 
 @section('class')
-	{{ $data->class }}
+	Advanced Physics
 @endsection
 
 
 @section('content')
-	{{ $data->content }}
+	Quantum Physics
 @endsection

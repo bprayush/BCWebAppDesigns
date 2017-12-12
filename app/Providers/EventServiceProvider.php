@@ -16,6 +16,9 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\ScheduleCreated' => [
             'App\Listeners\ScheduledEmail',
         ],
+        'App\Events\ScheduledEmailEvent' => [
+            'App\Listeners\ScheduledEmailListener',
+        ],
     ];
 
     /**

@@ -3,6 +3,9 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use App\Schedule;
+use Carbon\Carbon;
+use App\Events\ScheduledEmailEvent;
 
 class ScheduledNotification extends Command
 {
@@ -11,7 +14,7 @@ class ScheduledNotification extends Command
      *
      * @var string
      */
-    protected $signature = 'schedule:email';
+    protected $signature = 'automate:notification';
 
     /**
      * The console command description.
@@ -37,6 +40,13 @@ class ScheduledNotification extends Command
      */
     public function handle()
     {
-        
+        $tomorrow_day = Carbon::tomorrow()->format('D');
+
+        $schedules = Schedule::where('day', '=', $tomorrow_day)->get();
+
+        foreach( $schedules as $schedule)
+        {
+            event(new ScheduledEmailEvent($schedule, "suresh@karkhana.asia"));
+        }
     }
 }

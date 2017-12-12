@@ -20,7 +20,7 @@ class ManualEmailNotification extends Notification
      */
 
     private $request;
-    public function __construct(Request $request)
+    public function __construct($request)
     {
         $this->request = $request;
     }
@@ -44,9 +44,21 @@ class ManualEmailNotification extends Notification
      */
     public function toMail($notifiable)
     {
-        $data = $this->request;
-        $date = Carbon::parse($data->startdate);
+        // $data = $this->request;
+        // $date = Carbon::parse($data->startdate);
         //dd($data);
+
+        $data = [
+            'teacher' => 'Prof. Suresh Ghimire',
+            'school' => 'Doto School',
+            'starttime' => '2:00 am',
+            'endtime' => '12:00 am',
+            'class' => 'Advanced Science',
+            'content' => 'Quantum Physics'
+        ];
+
+        $date = Carbon::tomorrow();
+
         return (new MailMessage)
             ->subject('School Notification')
             ->view('admin.notification.email', compact('data', 'date'));

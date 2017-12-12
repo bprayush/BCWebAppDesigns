@@ -10,22 +10,24 @@ use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-class ScheduleCreated
+class ScheduledEmailEvent
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
 
     public $request;
+    public $email;
 
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct($request)
+    public function __construct($request, $email)
     {
-        $this->request = $request->all();
-        \Log::info("Inside events");
-        \Log::info($request);
+        $this->request = $request;
+        $this->email = $email;
+        // \Log::info("Inside events");
+        // \Log::info($request);
     }
 }

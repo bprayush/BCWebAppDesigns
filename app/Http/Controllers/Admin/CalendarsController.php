@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use Spatie\GoogleCalendar\Event;
 use Carbon\Carbon;
 use App\Events\ScheduleCreated;
+use App\Http\Controllers\Controller;
 
 class CalendarsController extends Controller
 {
