@@ -24,8 +24,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('automate:notification')->everyMinute();
-        $schedule->command('queue:work --tries=10 --timeout=300')->everyMinute();
+        $schedule->command('automate:notification')->dailyAt('9:00');
+        $schedule->command('queue:work --tries=10 --timeout=180')->everyMinute();
     }
 
     /**

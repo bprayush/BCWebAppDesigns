@@ -12,8 +12,8 @@
 			<div id="mainboy">
 				<div id="welcome">
 					<div id="admin">
-						<img src="images/me.jpg" style="width:32px;border-radius:100px;">&nbsp;&nbsp;&nbsp;
-						<img src="icons/white.png" style="width:24px;margin-bottom:5px;">
+						<img src="{{ asset('images/me.jpg') }}" style="width:32px;border-radius:100px;">&nbsp;&nbsp;&nbsp;
+						<img src="{{ asset('icons/white.png') }}" style="width:24px;margin-bottom:5px;">
 					</div>	
 					<br><br>
 					<span class="himan">Welcome Admin</span>

@@ -18,9 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::group(['prefix'=>'admin', 'middleware'=>'auth', 'namespace' => 'Admin'], function(){
-
 	Route::get('/', 'AdminController@index')->name('home');
-
 	Route::get('/email', 'SchedulesController@create')
 		->name('create.schedule');
 	Route::post('/send', 'SchedulesController@sendManualNotification')
@@ -33,9 +31,6 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth', 'namespace' => 'Admin'], 
 		->name('calendar.get.events');
 	Route::get('/calendar/delete', 'CalendarsController@deleteEvents')
 		->name('calendar.delete.events');
-
 });
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
