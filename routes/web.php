@@ -31,6 +31,10 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth', 'namespace' => 'Admin'], 
 		->name('calendar.get.events');
 	Route::get('/calendar/delete', 'CalendarsController@deleteEvents')
 		->name('calendar.delete.events');
+	Route::get('/calendar/schedule', function(){
+		return view('admin.layouts.designview');
+	}
+);
 });
 
 Auth::routes();

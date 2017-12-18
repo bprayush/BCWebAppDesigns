@@ -32,13 +32,13 @@ class RegisterController extends Controller
         if ( Auth::check() )
         {
             if( Auth::user()->admin )
-                return '/admin';
+                return view('/admin');
             else
-                return '/';
+                return ('/');
         }
         else
         {
-            return '/';
+            return ('/');
         }
     }
 
